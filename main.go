@@ -2,6 +2,7 @@ package main
 
 import (
 	"encoding/json"
+	"fmt"
 	"log"
 	"net/http"
 
@@ -20,6 +21,7 @@ func NonUniqueHandler(w http.ResponseWriter, r *http.Request) {
 		Array1 []int `json:"array1"`
 		Array2 []int `json:"array2"`
 	}
+	fmt.Println("New")
 
 	err := json.NewDecoder(r.Body).Decode(&requestData)
 	if err != nil {
