@@ -29,7 +29,7 @@ func NonUniqueHandler(w http.ResponseWriter, r *http.Request) {
 
 	map1 := make(map[int]int)
 	map2 := make(map[int]int)
-
+// new
 	for _, num := range requestData.Array1 {
 		map1[num]++
 	}
